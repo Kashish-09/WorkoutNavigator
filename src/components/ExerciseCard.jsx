@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-
+import {useState} from 'react'
+import {VideoPlayer} from './VideoPlayer.jsx'
 export default function ExerciseCard(props) {
     const{exercise, i} = props
     const [setsCompleted, setSetsCompleted] = useState(0)
@@ -38,9 +38,10 @@ export default function ExerciseCard(props) {
             })}
         </div>
         <div className='grid-cols-2 sm:grid-cols-4 sm:palce-items-center gap-2'>
-            {['reps','rest','tempo'].map(info =>{
+            {['reps','rest','tempo','link'].map(info =>{
                 return(
-                    <div key={info} className='flex flex-col p-2 rounded border-[1.5x] border-solid border-slate-900 w-full'>
+                <div key={info} className='flex flex-col p-2 rounded border-[1.5x] border-solid border-slate-900 w-full'>
+                    <div>
                         <h3 className='capitalize text-slate-400 text-sm'>
                             {info === 'reps' ? `${exercise.unit}` : info}
                         </h3>
@@ -48,6 +49,10 @@ export default function ExerciseCard(props) {
                             {exercise[info]}
                         </p>
                     </div>
+                    <div>
+                    <VideoPlayer videoId={'rT7DgCr-3pg'} />
+                    </div>
+                </div>
                 )
             })}
             <button onClick={handleSetIncrement} className='flex flex-col p-2 rounded border-[1.5px] duration-200 border-solid border-blue-900 hover:border-blue-600 w-full'>
