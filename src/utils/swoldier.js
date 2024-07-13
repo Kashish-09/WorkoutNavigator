@@ -1589,7 +1589,7 @@ export const EXERCISES = {
         muscles: ['triceps'],
         description: 'Adjust the cable to maximum elevation. Keeping your elbows just in-front of your sides, straighten your arms, pushing the weight down. Try to keep you elbows stationary in space throughout the motion. At the bottom of the pushing movement, twist the ropes handles down so that your palms face downwards as opposed to eachother.',
         substitutes: ['bar cable pushdown'],
-        link:['']
+        link:['LXkCrxn3caQ']
     },
     // tricep_bar_pushdown: {
     //     type: 'accessory',
@@ -1635,19 +1635,19 @@ export const EXERCISES = {
         substitutes: ['face press'],
         link:['jO2Jl9eZpXk']
     },
-    face_press: {
-        type: 'compound',
-        meta: {
-            environment: 'gymhome',
-            level: [0, 1, 2],
-            equipment: []
-        },
-        unit: 'reps', //vs duration    
-        muscles: ['triceps'],
-        description: 'In an incline plank position with your hands pressing on something mid-chest height (hands closer than shoulder width), keep your elbows tucked and slowly lower your body/face towards the surface. Then press back up. Your elbows should track directly downwards, not flaring to either side.',
-        substitutes: ['overhead_skull_crushers'],
-        link:['']
-    },
+    // face_press: {
+    //     type: 'compound',
+    //     meta: {
+    //         environment: 'gymhome',
+    //         level: [0, 1, 2],
+    //         equipment: []
+    //     },
+    //     unit: 'reps', //vs duration    
+    //     muscles: ['triceps'],
+    //     description: 'In an incline plank position with your hands pressing on something mid-chest height (hands closer than shoulder width), keep your elbows tucked and slowly lower your body/face towards the surface. Then press back up. Your elbows should track directly downwards, not flaring to either side.',
+    //     substitutes: ['overhead_skull_crushers'],
+    //     link:['']
+    // },
     overhead_skull_crusher: {
         type: 'compound',
         meta: {
